@@ -1,0 +1,3 @@
+[submodule "abstract_orm"]
+	path = abstract_orm
+	url = https://github.com/armandoasd/rust-diesel-abstract-orm.git
