@@ -1,3 +1,6 @@
 [submodule "abstract_orm"]
 	path = abstract_orm
 	url = https://github.com/armandoasd/rust-diesel-abstract-orm.git
+[submodule "generator"]
+	path = generator
+	url = hhttps://github.com/armandoasd/rust_diesel_scaffolding.git
