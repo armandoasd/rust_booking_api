@@ -1,0 +1,40 @@
+workspace = { members = ["abstract_orm"] , exclude = ["generator"]}
+[package]
+name = "test-netx-rs"
+version = "0.1.0"
+edition = "2021"
+default-run = "main"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ntex = { version = "1.0", features = ["tokio"] }
+num_cpus = "1.16"
+diesel = { version = "2.1.4", features = ["mysql", "r2d2", "chrono"] }
+r2d2 = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+diesel-autoincrement-new-struct = "0.1.1"
+cached = { version = "0.47.0", features = ["tokio", "async"] }
+env_logger = "0.10.2"
+log = "0.4.20"
+rand = "0.8.5"
+indicatif = "0.17.7"
+chrono = { version = "0.4.32", features = ["serde"] }
+orion = "0.17.6"
+derive_more = "0.99.17"
+jwt = "0.16.0"
+hmac = "0.12.1"
+sha2 = "0.10.8"
+pwhash = "1.0.0"
+regex = "1.10.3"
+lazy_static = "1.4.0"
+abstract_orm = { path = "./abstract_orm" }
+memory-stats = "1.1.0"
+syn = { version = "2.0.60", features = ["extra-traits"] }
+bitcode = { version = "0.6.0", features = ["serde"] }
